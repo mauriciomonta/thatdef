@@ -38,8 +38,18 @@
 
 }
 
+.nav-ham{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     .nav-ul{
         display: none;
+    }
+
+    .nav-ham{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }
