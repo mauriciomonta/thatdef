@@ -1,0 +1,45 @@
+.nav-frame{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.nav-content{
+    width: 100%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-ul > li{
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.nav-ul > li > a{
+    text-decoration: none;
+    color: var(--black);
+    transition: all 0.3s ease;
+}
+
+.nav-ul > li > a:hover{
+    background-color: var(--green);
+    padding: 0.5rem 1rem;
+    color: var(--black)
+
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-ul{
+        display: none;
+    }
+}
