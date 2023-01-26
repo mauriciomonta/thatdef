@@ -1,7 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Navbar.css'
 import Menu from './Menu'
+import { Fade as Hamburger } from 'hamburger-react'
+
 
 export default function Navbar() {
 
@@ -26,9 +28,9 @@ export default function Navbar() {
                         <Link>Contact</Link>
                     </li>
                 </ul>
-                <div className='nav-ham'>
-                    <button onClick={togglemenu}>menu</button>
-                    {isOpen ? <Menu/> : null}
+                <div className='nav-ham' onClick={togglemenu}>
+                    <Hamburger/>
+                    {isOpen ? <Menu /> : null}
                 </div>
             </div>
         </div>
