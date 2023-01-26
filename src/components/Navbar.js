@@ -13,10 +13,13 @@ export default function Navbar() {
         setIsOpen(!isOpen)
     }
 
+
     return (
         <div className='nav-frame'>
             <div className='nav-content'>
-                <img src='https://imgur.com/yTYx0dQ.png' alt='DEF Logo' width={120} className='nav-logo' />
+                <Link to='/'>
+                    <img src='https://imgur.com/yTYx0dQ.png' alt='DEF Logo' width={120} className='nav-logo' />
+                </Link>
                 <ul className='nav-ul'>
                     <li>
                         <Link>Projects</Link>
@@ -29,7 +32,7 @@ export default function Navbar() {
                     </li>
                 </ul>
                 <div className='nav-ham' onClick={togglemenu}>
-                    <Hamburger/>
+                    <Hamburger />
                     {isOpen ? <Menu /> : null}
                 </div>
             </div>
